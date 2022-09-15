@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <script>
+        var str1 = "Sayantani is the best girl. Sayantani loves to eat pizza"
+        var found = str1.match(/Say/g);
+        document.write(found)
+        alert(found)
+
+        var str = "Sayantani is my name"
+        console.log(str);
+        var repl = /is/gi;
+        var newvar = str.replace(repl, "the");
+        alert(newvar)
+
+        var str2 = "Hello all"
+        var sliced = str2.slice(3, -1);
+        alert(sliced)
+        var splitted = str2.split(" ",2)
+        alert(splitted)
+        alert(str2.substr(1,6))
+        alert(str2.substring(1,6))
+
+    </script>
+</body>
+</html>
