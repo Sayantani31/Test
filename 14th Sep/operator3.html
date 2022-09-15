@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator 3</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter the first number - </td>
+            <td ><input type="text" id ="t1"></td>
+        </tr>
+        <tr>
+            <td>Enter the second number - </td>
+            <td><input type="text" id="t2"></td>
+        </tr>
+        <tr>
+            <td>The result is - </td>
+            <td><input type="text" id="res"></td>
+        </tr>
+        
+    </table>
+    <button onclick="check()">Add</button>
+        <button onclick="check1()">Sub</button>
+        <button onclick="check2()">Mul</button>
+        <button onclick="check3()">Div</button>
+        <button onclick="check4()">mod</button>
+    <script>
+        function check(){
+            var a = parseInt(document.getElementById("t1").value)
+            var b = parseInt(document.getElementById("t2").value)
+            document.getElementById("res").value = (a+b);
+        }
+        function check1(){
+            var a = parseInt(document.getElementById("t1").value)
+            var b = parseInt(document.getElementById("t2").value)
+            document.getElementById("res").value = (a-b);
+        }
+        function check2(){
+            var a = parseInt(document.getElementById("t1").value)
+            var b = parseInt(document.getElementById("t2").value)
+            document.getElementById("res").value = (a*b);
+        }
+        function check3(){
+            var a = parseInt(document.getElementById("t1").value)
+            var b = parseInt(document.getElementById("t2").value)
+            document.getElementById("res").value = (a/b);
+        }
+        function check4(){
+            var a = parseInt(document.getElementById("t1").value)
+            var b = parseInt(document.getElementById("t2").value)
+            document.getElementById("res").value = (a%b);
+        }
+    </script>
+</body>
+</html>

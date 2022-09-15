@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator 2</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter first number -: </td>
+            <td><input type = "text" id="t1"</td>
+        </tr>
+        <tr>
+            <td>Enter Second number -: </td>
+            <td><input type = "text" id="t2"</td>
+        </tr>
+    </table>
+    <button onclick="check()">Check Now</button>
+    <script>
+        function check(){
+            var a = parseInt(document.getElementById("t1").value);
+            var b = parseInt(document.getElementById("t2").value);
+                alert(a+b);
+        }
+    </script>
+</body>
+</html>
