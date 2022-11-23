@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darjeeling Tour</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="restaurants.css">
+</head>
+<body>  
+    
+    <ul>
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="hotels.html">Hotels</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+   
+    </ul>
+    <br><br>
+
+    <button onclick="clock()">Time</button>
+    <script>
+        function clock() {
+            let date = new Date().getHours();
+            let hrs;
+
+            if(date <=  12){
+                hrs1 = "Good Morning"
+            }else if(date>=12 && date <= 17){
+                hrs1 = "Good Noon"
+            }            
+            else{
+                hrs1 = "Good Evening"
+            }
+
+            document.write(hrs1)
+    
+            // console.log(date);
+
+            // let hrs = date.getHours();
+            // let mins = date.getMinutes();
+            // let secs = date.getSeconds();
+            // let period = "AM";
+
+            // if(hrs == 0) hrs = 12;
+            // if(hrs > 12 ) {
+            //     hrs = hrs - 12;
+            //     period = "PM";
+            // }
+
+            // hrs = hrs < 10 ? `0${hrs}` : hrs;
+            // mins = mins < 10 ? `0${mins}` : mins;
+            // secs = secs < 10 ? `0${secs}`   :  secs;
+
+            // let time = `${hrs} : ${mins} : ${secs} ${period}`;
+
+            // document.write(time);
+
+
+        }
+     
+    </script>
+
+    <br><br>
+
+    <table border="black">
+     
+        
+            <tr>
+                <td>
+                    The Park Restaurant
+                </td>
+                <td>
+                    Keventers
+                </td>
+            </tr>
+            <tr>
+                <td>Dekevas Restaurant</td>
+                <td>Glenary's</td>
+            </tr>
+            <tr>
+                <td>Hot Stimulating Cafe</td>
+                <td>Hasty Tasty</td>
+            </tr>
+            
+    </table>
+<br><br>
+    <button onclick="restaurant()">Best Restaurant</button>
+<script>
+        function restaurant()
+        {
+           
+            document.write("Keventers")
+       
+        }
+    
+</script>
+</body>
+</html>
