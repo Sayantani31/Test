@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darjeeling Tour</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>  
+    
+    <ul>
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="hotels.html">Hotels</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+   
+    </ul>
+<br><br>
+<button onclick="cf()">Add</button>
+<button onclick="cf1()">Minus</button>
+<p id="p1"> 0 </p>
+<script>
+    let counter = 0;
+        const add = (function(){
+            return function() {counter ++; return counter;}
+        })();
+        const minus =(function(){
+            return function() {counter --; return counter}
+        })();
+        function cf(){
+            document.getElementById("p1").innerHTML = add();
+        }
+        function cf1(){
+            document.getElementById("p1").innerHTML = minus();
+        }
+
+</script>
+</body>
+</html>
